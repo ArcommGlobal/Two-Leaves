@@ -1,0 +1,34 @@
+# Changelog
+
+All notable changes to Two Leaves are documented here.
+
+## [1.0.0] — First public release
+
+### Core
+- Chat UI for local Ollama models, built as a single self-contained HTML file.
+- Full markdown rendering (code blocks, lists, links, bold/italic).
+- Collapsible "Reasoning" section for models that output `<think>` blocks (e.g. Qwen3).
+- Live connection status indicator and model picker, with a "Refresh models" button.
+
+### Conversations
+- Chats autosave locally in the browser and persist across sessions.
+- Sidebar history list — reopen, right-click to export (copy as markdown) or delete (with confirmation).
+- "New chat" button to start fresh.
+
+### Speed
+- Smart Speed Mode: optionally routes short messages (≤12 words) to a smaller/faster model automatically, falling back to a main model for longer prompts.
+- Stop button to cancel a response mid-stream, keeping whatever had already generated.
+
+### Design
+- Custom cream/sage color theme with a background image and slow ambient pan/zoom.
+- Material You–style motion: ripple feedback, spring-loaded toggle, animated modals and context menus.
+- Collapsible "Advanced" settings panel to keep the everyday UI simple.
+- Collapsible sidebar.
+
+### Security
+- Markdown output is sanitized with DOMPurify before rendering, closing an XSS gap where raw HTML in a model's response (or a misbehaving server) could otherwise execute.
+- Error messages and server details are HTML-escaped before display.
+
+---
+
+Version numbers follow [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH` — patch for fixes, minor for new features, major for breaking changes.
