@@ -3,6 +3,7 @@
 A lightweight, local-only chat UI for [Ollama](https://ollama.com). Single HTML file, no install, no server, no data ever leaves your machine. Full markdown rendering, conversation history, and an optional "Smart Speed Mode" that automatically routes short messages to a smaller/faster model.
 
 ![status](https://img.shields.io/badge/status-personal%20project-informational)
+![version](https://img.shields.io/badge/version-1.0.0-7E9A6D)
 
 ## Features
 
@@ -100,6 +101,10 @@ The model list is fetched when the page loads. If you pull a new model with Olla
 
 Everything — colors, background image, app name, icon — lives as plain CSS variables and inline styles at the top of `ollama-chat.html`. No build tooling required to re-skin it.
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history.
+
 ## License
 
-MIT — see [LICENSE](LICENSE).
+[PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) — see [LICENSE](LICENSE). Free to use, modify, and share for any noncommercial purpose (personal use, hobby projects, learning, etc.). Not licensed for commercial/for-profit use.
